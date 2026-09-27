@@ -29,10 +29,10 @@
 # =============================================================================
 
 # 站点正式访问地址（影响 sitemap、RSS、分享链接等绝对 URL，部署前务必与真实域名一致）
-baseURL = 'https://daily.yybb.us/'
+baseURL = 'https://olderbiao.github.com'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
-title = 'AIOVTUE-雪'          # 站点名称（浏览器标题、页脚版权等）
+title = 'OlderBiao-霜'          # 站点名称（浏览器标题、页脚版权等）
 theme = 'aiovtue'           # 主题目录：themes/aiovtue/
 hasCJKLanguage = true      # 启用中文分词（搜索、摘要等）
 enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layouts/robots.txt）
@@ -88,10 +88,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 # 站点参数（主题通过 .Site.Params 读取）
 # =============================================================================
 [params]
-  subtitle = '雪'                              # 副标题（首页标题后缀）
-  description = '雨是神的烟花'                  # 站点默认描述（SEO、分享卡片）
-  primaryColor = '#DF9193'                     # 主题主色
-  favicon = '/hero/avatar.png'
+  subtitle = '霜'                              # 副标题（首页标题后缀）
+  description = '我对普通的人类没有兴趣'                  # 站点默认描述（SEO、分享卡片）
+  primaryColor = '#98B4D4'              # 主题主色
+  favicon = '/hero/_avatar.png'
   defaultCover = '/hero/tt3.png'               # 文章默认头图（无 cover 时使用）
   math = false                                 # 默认关闭；单篇 front matter 写 math: true 启用构建时 KaTeX 渲染
   postIndent = true                            # 文章/关于页正文首行缩进 2em（单篇可写 indent: false 关闭）
@@ -101,10 +101,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     fontSize = "1.1rem"                          # 正文字号（rem，如 0.95rem / 1.1rem）
 
   # --- 友链页 ---
-  [params.links]
-    layout = 'preview'                        # preview：卡片截图 | simple：长条头像+悬停预览
-    rssEnable = true                         # 友链页「朋友动态」RSS 展示（关闭时不拉取 RSS）
-    footerEnable = false                      # 全站页脚友链列表展示
+  #[params.links]
+  #  layout = 'preview'                        # preview：卡片截图 | simple：长条头像+悬停预览
+  #  rssEnable = true                         # 友链页「朋友动态」RSS 展示（关闭时不拉取 RSS）
+  #  footerEnable = false                      # 全站页脚友链列表展示
 
   # --- 动态页（每条动态：content/moments/*.md，front matter 仅需 date）---
   [params.moments]
@@ -114,8 +114,8 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 追番页（Bilibili 追番列表，构建时拉取 data/bangumi.json）---
   [params.bangumi]
     enable = true                             # 是否启用追番页与构建时数据拉取
-    vmid = '334423445'                        # Bilibili 用户 UID（追番列表需空间公开）
-    quote = '生命不息，追番不止！'              # 页面引言
+    vmid = '3493116361312492'                        # Bilibili 用户 UID（追番列表需空间公开）
+    quote = '跟尝氨汽车一起追番，这是计划的一部分'              # 页面引言
 
   # --- Excalidraw 画板文章（content/excalidraw/<slug>/index.md + *.excalidraw）---
   # 独立栏目，首页/归档/搜索与 posts 合并展示；单页为交互式只读查看器
@@ -128,9 +128,9 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 侧栏 / 关于页作者信息 ---
   [params.author]
-    name = '作者名称'
-    avatar = '/hero/avatar.png'
-    statusEmoji = '🌸'     # 头像角标
+    name = '南宫乐5弦'
+    avatar = '/hero/_avatar.png'
+    statusEmoji = '🥚'     # 头像角标
     statusMessage = '发呆ing...'
 
   # --- 首页 Hero 大图 / 视频轮播 ---
@@ -146,7 +146,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     lineOpacityDark = 0.1
 
   [params.hero]
-    title = 'AIOVTUE'
+    title = 'OlderBiao'
     # motto：关闭一言时显示的格言；字符串=固定一句，数组=每次随机一条（打字机效果同一言）
     motto = [
       '雨是神的烟花',
@@ -161,24 +161,23 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     typewriterSpeed = 80
     style = 'dot'          # 背景样式：dot / grid 等
     fixedImg = true
-    playerUrl = '/hero/player.mp4'
+    playerUrl = '/hero/God_Knows.mp4'
     urls = [
-      '/hero/tt3.png',
-      '/hero/tt1.png',
-      '/hero/tt2.png',
-      '/hero/sp1.mp4',
-      '/hero/hero-1.jpg', 
-      '/hero/hero-2.png', 
-      '/hero/hero-1.mp4',
-      '/hero/hero-2.mp4',
+      '/hero/lv1.mp4',
+      '/hero/lv2.mp4',
+      '/hero/lv3.mp4',
+      '/hero/lv4.mp4',
+      '/hero/lv5.mp4',
+      '/hero/hero_1.png', 
+
       
     ]
 
   # --- 页脚 ---
   [params.footer]
-    since = 2024           # 版权起始年
-    runtimeSince = '2024-01-01'   # 站点运行倒计时起点（YYYY-MM-DD）
-    icp = '<a href="https://icp.gov.moe/?keyword=20260258" target="_blank" rel="noopener">萌ICP备20260258号</a>'
+    since = 2026           # 版权起始年
+    runtimeSince = '2026-09-27'   # 站点运行倒计时起点（YYYY-MM-DD）
+    #icp = '<a href="https://icp.gov.moe/?keyword=20260258" target="_blank" rel="noopener">萌ICP备20260258号</a>'
 
 # --- 首页公告栏（右侧域名列表）---
   # --- 首页文章列表布局 ---
@@ -223,10 +222,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     rotateInterval = 5000  # 左侧随机文章轮播间隔（毫秒）
     [[params.notice.sections]]
       label = '--- 主域名 ---'
-      lines = ['daily.yybb.us', 'day.yybb.us']
+      lines = ['olderbiao.github.com', 'gunmu.gunmu.top']
     [[params.notice.sections]]
       label = '--- 这是公告 ---'
-      lines = ['公告在配置文件中修改哦']
+      lines = ['公告就是没有公告！']
 
   # --- 侧栏 / Hero 社交图标（icon 为 Iconify 图标名）---
   [[params.social]]
@@ -239,21 +238,21 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     link = 'https://github.com/AIOVTUE'
     icon = 'ri:github-line'
     color = '#6e5494'
-  [[params.social]]
-    name = '微信公众号'
-    link = '/hero/wxgzh.png'
-    icon = 'ri:wechat-2-line'
-    color = '#1AAD19'
+  #[[params.social]]
+  #  name = '微信公众号'
+  #  link = '/hero/wxgzh.png'
+  #  icon = 'ri:wechat-2-line'
+  #  color = '#1AAD19'
   [[params.social]]
     name = 'E-Mail'
-    link = 'mailto:x@yybb.us'
+    link = 'mailto:olderbiao6@outlook.com'
     icon = 'ri:mail-line'
     color = '#8E71C1'
-  [[params.social]]
-    name = 'Travelling'
-    link = 'https://www.travellings.cn/go.html'
-    icon = 'ri:train-line'
-    color = '#8cb1b3'
+  #[[params.social]]
+  #  name = 'Travelling'
+  #  link = 'https://www.travellings.cn/go.html'
+  #  icon = 'ri:train-line'
+  #  color = '#8cb1b3'
 
   # --- 归档 / 标签页 ECharts 图表 ---
   [params.charts]
@@ -265,10 +264,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     enable = true
     title = '我很可爱，请给我钱！'
     description = '我很可爱哦，可以给我点钱钱嘛~'
-    [[params.sponsor.methods]]
-      name = '支付宝'
-      url = '/img/zfb.png'
-      color = '#00A3EE'
+   # [[params.sponsor.methods]]
+    #  name = '支付宝'
+    #  url = '/img/zfb.png'
+    #  color = '#00A3EE'
     [[params.sponsor.methods]]
       name = '微信支付'
       url = '/img/weix.png'
@@ -277,7 +276,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 文章版权声明（CC 协议）---
   [params.license]
     enable = true
-    type = 'by-nc-sa'      # CC 类型：by / by-nc / by-nc-sa / zero 等
+    type = 'by'      # CC 类型：by / by-nc / by-nc-sa / zero 等
     language = 'zh'
     
   # --- 动态手写签名（signature-inline）---
@@ -285,8 +284,8 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # footerEnable：全站页脚 copyright 区「by xxx」处的签名动画（关闭后显示 author.name 文字）
   # 不影响正文 Markdown 中 [签名](signature:) 的签名效果
   [params.signature]
-    postCopyrightEnable = false
-    footerEnable = false
+    postCopyrightEnable = true
+    footerEnable = true
 
   # --- 文章页脚导航 ---
   [params.postFooter]
@@ -325,8 +324,8 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 顶栏标题 ---
   [params.navbar]
-    titleParts = ['AIOVTUE-', '雪']   # 顶栏主标题分段（可产生动画效果）
-    subTitle = '雨是神的烟花'
+    titleParts = ['OlDERBIAO-', '霜']   # 顶栏主标题分段（可产生动画效果）
+    subTitle = '我对普通的人类没有兴趣'
     offset = 0
 
     # 移动端下滑隐藏顶栏（默认首页不生效，设 includeHome = true 则全站含首页生效）
@@ -403,11 +402,11 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     url = '/comment/'
     icon = 'ant-design:message-filled'
     weight = 4
-  [[params.menu.main]]
-    name = '友链'
-    url = '/links/'
-    icon = 'ant-design:global-outlined'
-    weight = 5
+  #[[params.menu.main]]
+  #  name = '友链'
+  #  url = '/links/'
+  #  icon = 'ant-design:global-outlined'
+  #  weight = 5
   [[params.menu.main]]
     name = '关于'
     url = '/about/'
@@ -418,7 +417,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # enable：是否显示播放器；单页可在 front matter 写 musicPlayer: false 关闭
   [params.music]
     enable = true
-    position = 'right'        # left | right，按钮默认停靠左下或右下
+    position = 'left'        # left | right，按钮默认停靠左下或右下
     
     # apis：按顺序尝试，前一个不可用时自动切换下一个，默认不需要动
     apis = [
@@ -433,7 +432,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- Live2D 看板娘（左下角 Live2D 角色）---
   # enable：是否启用；单页可在 front matter 写 live2d: false 关闭
   [params.live2d]
-    enable = true
+    enable = false
     minWidth = 768                                # 低于此宽度不加载
     drag = false
     tools = ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit']
@@ -447,9 +446,9 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     # 模型库 cdnPath（静态模型目录，含 model_list.json）— 与 apiPath 二选一
     cdnPath = 'https://live2d.kafuchino.top/'     # nova1751 扩展库：少女前线等（21 组模型）
     # 备用模型库（取消注释一行替换上方 cdnPath 即可切换模型种类）：
-    # cdnPath = 'https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/'   # fghrsh 经典库：Shizuku / 海王星 / Pio 等（7 组）
-    # cdnPath = 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/'      # 同上 · jsDelivr 国内节点
-    # cdnPath = 'https://fastly.jsdelivr.net/gh/nova1751/live2d-api/' # nova1751 仓库镜像（模型集与 kafuchino 相同）
+    #cdnPath = 'https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/'   # fghrsh 经典库：Shizuku / 海王星 / Pio 等（7 组）
+    #cdnPath = 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/'      # 同上 · jsDelivr 国内节点
+    #cdnPath = 'https://fastly.jsdelivr.net/gh/nova1751/live2d-api/' # nova1751 仓库镜像（模型集与 kafuchino 相同）
     #
     # 模型库 apiPath（fghrsh 动态 PHP 接口；启用时需注释掉上方 cdnPath）：
     # apiPath = 'https://live2d.fghrsh.net/api/'                      # fghrsh 官方动态 API（接口式换模型/皮肤）
